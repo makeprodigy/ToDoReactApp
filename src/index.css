@@ -1,0 +1,27 @@
+* {
+  outline: 1px solid rgb(251, 251, 251) !important;
+  background-color: black;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*, *::before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 2.5%;
+}
+
+#main_container {
+  height: 100vh;
+  width: 100%; /* 100% instead of 100vw becuase vw causes error due to scrollbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
