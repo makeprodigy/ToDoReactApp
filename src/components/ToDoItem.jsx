@@ -3,10 +3,17 @@ import React from 'react'
 const ToDoItem = ({newItem, onDelete}) => {
   return (
     <p id='to_do_item'>
-      <span>{newItem.task}</span>
-      <span>{newItem.date}</span>
-      <span>{newItem.time}</span>
-      <button onClick={() => onDelete(newItem)}>Delete</button>
+      <div id='to_do_item_values'>
+        <div 
+        id='to_do_item_values_task'>
+          {newItem.task}</div>
+        <div 
+        id='to_do_item_values_date'>
+          {newItem.date}</div>
+        <div id='to_do_item_values_time'>
+          {newItem.time}</div>
+      </div>
+      <button id='delete_button' onClick={() => onDelete(newItem)}>Delete</button>
     </p>
   )
 }

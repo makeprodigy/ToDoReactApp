@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Header from './components/Header'
 import ToDoInput from './components/ToDoInput'
-import ToDoFilter from './components/ToDoFilter'
 import ListDisplay from './components/ListDisplay'
 import Footer from './components/Footer'
 
@@ -21,29 +20,18 @@ const ToDoApp = () => {
   
   return (
   <div id='main_container'>
-    <Header 
-    id='header' 
-    />
+    <Header />
 
     <ToDoInput 
-    id='to_do_input' 
     onAdd={handleAdd}
     />
 
-    <ToDoFilter 
-    id='to_do_filter' 
-    />
-
     <ListDisplay 
-    id='list_display' 
     items={toDoList} 
     onDelete={handleDelete}
     />
 
-    <Footer 
-    id='footer' 
-    />
-    
+    {/* <Footer />    */}
   </div>
   )
 }

@@ -26,6 +26,7 @@ const ToDoInput = ({onAdd}) => {
       <input
         id='task_input'
         type='text'
+        maxLength='30'
         placeholder='Enter task'
         value={task}
         onChange={(e) => setTask(e.target.value)}
@@ -37,7 +38,7 @@ const ToDoInput = ({onAdd}) => {
         onChange={(e) => setDate(e.target.value)}
       />
       <input
-        id="time-input"
+        id="time_input"
         type="time"
         value={time}
         onChange={(e) => setTime(e.target.value)}

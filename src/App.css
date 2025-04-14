@@ -1,5 +1,8 @@
+:root {
+  --primary-color: rgb(110, 180, 249);
+}
 * {
-  outline: 1px solid rgb(59, 58, 58) !important;
+  /* outline: 1px solid rgb(59, 58, 58) !important; */
   background-color: black;
   color: white;
 }
@@ -16,20 +19,47 @@ body {
 
 #header {
   width: 60%;
-  height: 10%;
-  text-align: center;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header h1 {
+  color: white;
+  font-size: 3em;
 }
 
 #to_do_input {
-  width: 60%;
-  height: 10%;
-  text-align: center;
+  width: 60vw;
+  height: 7vh;
+  background-color: var(--primary-color);
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vh;
 }
-#task_input{
 
+#task_input, #date_input, #time_input, #add_button {
+  height: 100%;
+  border: none;
+  padding: 0 1vw;
+  font-size: 1.2vw; /* responsive font */
 }
-#date_input{
 
+/* Rounded edges for smooth connection */
+#task_input {
+  border-radius: 1em 0 0 1em;
+  flex: 2;
+}
+#date_input, #time_input {
+  border-radius: 0;
+  flex: 1;
+}
+#add_button {
+  border-radius: 0 1em 1em 0;
+  flex: 0.5;
+  background-color: rgb(0, 0, 0);
 }
 
 #to_do_filter {
@@ -40,8 +70,36 @@ body {
 
 #list_display {
   width: 60%;
-  height: 60%;
+  height: 65%;
   text-align: center;
+  padding: 1%;
+  overflow: auto;
+}
+#to_do_item {
+  margin-bottom: 2%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+#to_do_item_values {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#to_do_item_values_task {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5em;
+}
+#delete_button {
+  padding: 1%;
+  font-size: 1em;
+  border: 0.1em dotted var(--primary-color);
+  border-radius: 0 1em 1em 1em;
 }
 
 #footer {
