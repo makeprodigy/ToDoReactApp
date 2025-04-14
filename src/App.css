@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 1% 0;
+}
+
 #header {
   width: 60%;
   height: 10%;
@@ -17,6 +21,30 @@ html {
 }
 
 #to_do_input {
+  width: 60%;
+  height: 10%;
+  text-align: center;
+}
+#task_input{
+
+}
+#date_input{
+
+}
+
+#to_do_filter {
+  width: 60%;
+  height: 10%;
+  text-align: center;
+}
+
+#list_display {
+  width: 60%;
+  height: 60%;
+  text-align: center;
+}
+
+#footer {
   width: 60%;
   height: 10%;
   text-align: center;

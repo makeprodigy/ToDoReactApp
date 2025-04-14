@@ -13,15 +13,17 @@
 }
 
 body {
-  padding: 2.5%;
+  padding: 1%;
 }
 
 #main_container {
-  height: 100vh;
+  height: 95vh;
   width: 100%; /* 100% instead of 100vw becuase vw causes error due to scrollbar */
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+  padding: 1%;
 }
+
 
