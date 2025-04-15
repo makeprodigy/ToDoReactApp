@@ -56,10 +56,14 @@ body {
   border-radius: 0;
   flex: 1;
 }
+#time_input {
+  border-radius: 0 1em 1em 0;
+}
 #add_button {
   border-radius: 0 1em 1em 0;
   flex: 0.5;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--primary-color);
+  color: black;
 }
 
 #to_do_filter {
@@ -82,25 +86,41 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2em;
+  border-radius: 1em;
 }
+/* #to_do_item_values:hover *:not(#delete_button) {
+  background-color: hsl(0, 0%, 25%);
+} */
 #to_do_item_values {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
+  border-radius: 1em;
 }
 #to_do_item_values_task {
   width: 100%;
   text-align: left;
   font-size: 1.5em;
 }
+#to_do_item_values_date {
+  width: 100%;
+  text-align: left;
+}
+#to_do_item_values_time {
+  width: 100%;
+  text-align: left;
+}
 #delete_button {
   padding: 1%;
   font-size: 1em;
   border: 0.1em dotted var(--primary-color);
-  border-radius: 0 1em 1em 1em;
+  border-radius: 0 1em 1em 0;
 }
+#delete_button:hover {
+  background-color: var(--primary-color);
+} 
 
 #footer {
   width: 60%;
