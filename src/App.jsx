@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import ToDoInput from './components/ToDoInput'
 import ListDisplay from './components/ListDisplay'
@@ -7,7 +7,14 @@ import Footer from './components/Footer'
 import './App.css'
 
 const ToDoApp = () => {
-  const [toDoList, setToDoList] = useState([])
+  const [toDoList, setToDoList] = useState(() => {
+    const savedList = localStorage.getItem('toDoList')
+    return savedList ? JSON.parse(savedList) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem('toDoList', JSON.stringify(toDoList))
+  }, [toDoList])
 
   const handleAdd = (newItem) => {
     setToDoList([...toDoList, newItem])
