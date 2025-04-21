@@ -30,21 +30,21 @@ body {
 }
 
 #to_do_input {
-  width: 60vw;
-  height: 7vh;
+  width: 100%;
+  height: 4em;
   background-color: var(--primary-color);
   border-radius: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5vh;
+  padding: 1%;
 }
 
 #task_input, #date_input, #time_input, #add_button {
   height: 100%;
   border: none;
-  padding: 0 1vw;
-  font-size: 1.2vw; /* responsive font */
+  padding: 0 1%;
+  font-size: 1em; /* responsive font */
 }
 
 /* Rounded edges for smooth connection */
