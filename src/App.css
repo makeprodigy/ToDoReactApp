@@ -30,7 +30,7 @@ body {
 }
 
 #to_do_input {
-  width: 100%;
+  width: 80%;
   height: 4em;
   background-color: var(--primary-color);
   border-radius: 1em;
@@ -41,6 +41,7 @@ body {
 }
 
 #task_input, #date_input, #time_input, #add_button {
+  width: 80%;
   height: 100%;
   border: none;
   padding: 0 1%;
@@ -126,5 +127,18 @@ body {
   width: 60%;
   height: 10%;
   text-align: center;
+}
+
+@media (max-width: 475px) {
+  #to_do_input {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #task_input, #date_input, #time_input, #add_button {
+    padding: 1%;
+    border-radius: 8px;
+    margin: 1% 0;
+  }
 }
 
