@@ -240,14 +240,14 @@ body {
 }
 
 .save-btn {
-  background: var(--primary-color);
-  color: var(--dark-bg);
+  background: var(--primary-color) !important;
+  color: var(--dark-bg) !important;
 }
 
 .cancel-btn {
-  background: rgba(239, 68, 68, 0.2);
-  color: rgb(239, 68, 68);
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: rgb(239, 68, 68) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
 }
 
 #footer {
@@ -289,15 +289,30 @@ body {
 #to_do_item_values_time,
 .todo-meta,
 .item-actions,
-.edit-input,
-.save-btn,
-.cancel-btn {
+.edit-input {
   background: transparent !important;
   box-shadow: none !important;
 }
 
 /* Remove border for inner elements if needed */
-.save-btn, .cancel-btn {
-  border: none;
+
+/* Restore button backgrounds for Edit, Delete, Save, and Cancel */
+#edit_button {
+  background: var(--primary-color) !important;
+  color: var(--dark-bg) !important;
+}
+#delete_button {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: rgb(239, 68, 68) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+}
+.save-btn {
+  background: var(--primary-color) !important;
+  color: var(--dark-bg) !important;
+}
+.cancel-btn {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: rgb(239, 68, 68) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
 }
 
